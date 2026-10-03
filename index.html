@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Даша для своих — закрытый клуб Даши Шамашу</title>
+<meta name="description" content="Тебе больше не нужно разбираться со своей жизнью в одиночку. Закрытый клуб Даши Шамашу для мужчин и женщин. Первый сезон — 8 недель.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Miama Nueva';src:url(fonts/miama-nueva.woff) format('woff');font-display:swap}
+
+:root{
+  --bg:#0b0605;
+  --bg-2:#120a07;
+  --line:rgba(222,184,124,.22);
+  --gold-1:#f7e6c0;
+  --gold-2:#ddb67c;
+  --gold-3:#a8783f;
+  --wine:#d0434c;
+  --text:#f4e9da;
+  --text-2:#cbb9a2;
+  --text-3:#8f7d6a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-variant-numeric:lining-nums}
+h1,h2,h3,.big,.lead{text-wrap:balance}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.pf{font-family:'Playfair Display',Georgia,serif}
+.gold{background:linear-gradient(180deg,var(--gold-1) 0%,var(--gold-2) 55%,var(--gold-3) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.script{font-family:'Great Vibes',cursive;color:var(--wine);font-weight:400;line-height:1}
+.ico{width:26px;height:26px;fill:none;stroke:var(--wine);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+
+section{padding:80px 0;position:relative;overflow:hidden}
+.alt{background:var(--bg-2)}
+.kicker{font-family:'Playfair Display',serif;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2)}
+.rule{width:200px;height:1px;margin:18px 0 24px;background:linear-gradient(90deg,var(--gold-2),transparent)}
+.center .rule,.rule.c{margin-left:auto;margin-right:auto;background:linear-gradient(90deg,transparent,var(--gold-2),transparent)}
+.center{text-align:center}
+h2{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(36px,4.6vw,60px);line-height:1.1}
+
+/* боке — тёплые огоньки, как на баннере */
+.bokeh:before{content:"";position:absolute;inset:-40px;pointer-events:none;filter:blur(14px);opacity:.8;background:
+  radial-gradient(circle at 4% 14%,rgba(255,178,98,.7) 0,transparent 2.6%),
+  radial-gradient(circle at 9% 62%,rgba(255,160,80,.35) 0,transparent 3.6%),
+  radial-gradient(circle at 2% 86%,rgba(255,190,120,.4) 0,transparent 2.4%),
+  radial-gradient(circle at 95% 22%,rgba(255,170,90,.4) 0,transparent 2.8%),
+  radial-gradient(circle at 91% 78%,rgba(255,150,80,.32) 0,transparent 3.8%),
+  radial-gradient(circle at 98% 50%,rgba(255,196,130,.3) 0,transparent 2%),
+  radial-gradient(ellipse at 50% 50%,rgba(70,30,16,.55) 0,transparent 60%)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:22px 52px;border-radius:999px;white-space:nowrap;
+  background:linear-gradient(180deg,#f6e3ba 0%,#e0bd86 45%,#c0904f 100%);color:#1d130c;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:16px;text-decoration:none;
+  box-shadow:0 14px 44px rgba(220,170,100,.25),inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 0 rgba(120,80,30,.25);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 54px rgba(220,170,100,.38),inset 0 1px 0 rgba(255,255,255,.6)}
+.btn svg{width:22px;height:22px}
+.under{margin-top:16px;font-size:13px;color:var(--text-3);letter-spacing:.06em}
+
+/* ===== 1. ПЕРВЫЙ ЭКРАН ===== */
+.cover{background:#0f0806}
+.cover .frame{position:relative;max-width:1672px;margin:0 auto}
+.cover img{width:100%;height:auto}
+.cover .banner-cta{position:absolute;left:8.9%;top:79.4%;width:35.3%;height:10.9%;border-radius:999px}
+.intro{padding:40px 0 28px;text-align:center;background:linear-gradient(180deg,#0f0806 0%,var(--bg) 100%)}
+.intro h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(32px,3.8vw,52px);line-height:1.18;max-width:900px;margin:0 auto}
+.intro .expl{max-width:680px;margin:20px auto 0;color:var(--text-2);font-size:17px}
+.both{display:inline-flex;align-items:center;gap:12px;margin-top:26px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2)}
+.both:before,.both:after{content:"";width:5px;height:5px;border-radius:50%;background:var(--wine)}
+.format{display:flex;justify-content:center;margin:38px auto 42px;max-width:860px}
+.format div{flex:1;padding:0 18px;display:flex;flex-direction:column;align-items:center;gap:14px;font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;line-height:1.45}
+.format div+div{border-left:1px solid var(--line)}
+.format .ico{width:34px;height:34px}
+
+/* ===== 2. СЮДА МОЖНО ПРИЙТИ С ЖИЗНЬЮ ===== */
+.life{padding:44px 0 40px;background:var(--bg)}
+.life h2{text-align:center}
+.life h2 .script{font-size:1.3em;margin-left:.12em}
+.wall{max-width:960px;margin:44px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;font-family:'Playfair Display',serif;font-size:clamp(20px,2.1vw,27px);line-height:1.35;text-align:center}
+.wall span{white-space:nowrap}
+.wall .a{color:var(--text)}
+.wall .b{color:var(--gold-2)}
+.wall .w{white-space:normal}
+.life .last{margin-top:22px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;color:var(--text-2);font-size:19px}
+.anyone{max-width:760px;margin:40px auto 0;padding-top:32px;text-align:center;position:relative}
+.anyone:before{content:"";position:absolute;top:0;left:50%;width:200px;margin-left:-100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-2),transparent)}
+.anyone p{font-size:15px;letter-spacing:.06em;color:var(--text-2)}
+.anyone .big{margin-top:14px;font-family:'Playfair Display',serif;font-size:clamp(24px,2.6vw,34px);line-height:1.3}
+
+/* ===== 3. ДАША / СВОИ / ТЫ ===== */
+.why-head{margin-bottom:48px}
+.why.first{padding-top:40px;padding-bottom:40px}
+.why.svoi{padding:40px 0}
+.why.ty{padding:40px 0 56px}
+.svoi .ghost{top:-40px}
+.lead.hand{font-family:'Great Vibes',cursive;font-size:clamp(34px,3.6vw,52px);line-height:1.25;color:var(--gold-1);text-wrap:pretty;margin-top:18px}
+.lines.one{max-width:720px;margin:36px auto 0;text-align:left}
+.lines.one li{font-size:16px;padding:12px 0 12px 30px}
+.lines.one li:before{top:23px;width:16px}
+.dasha-end{margin-top:36px}
+.dasha-end b{font-size:clamp(22px,2.3vw,30px)}
+.lines.two{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:40px auto 0;max-width:1000px;text-align:left}
+.lines.two li{font-size:16px;padding:12px 0 12px 30px}
+.lines.two li:before{top:23px;width:16px}
+.lines.two li:nth-last-child(2){border-bottom:1px solid var(--line)}
+.dasha-photo{position:relative;max-width:680px;margin:0 auto 22px}
+.dasha-photo img{width:100%;height:auto;position:relative;z-index:1}
+.dasha-photo:after{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid rgba(222,184,124,.45);z-index:0}
+.dasha-text{margin-top:50px;text-align:center}
+.dasha-text .lead.hand{margin-top:26px;max-width:1000px;margin-left:auto;margin-right:auto;text-wrap:balance}
+.gives{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:38px 70px;max-width:900px;margin:48px auto 0}
+.gives li{display:flex;flex-direction:column;align-items:center;gap:14px;font-family:'Playfair Display',serif;font-size:21px;line-height:1.4;color:var(--text)}
+.gives span{max-width:360px;text-wrap:balance}
+.gives svg{width:18px;height:18px;fill:var(--wine);opacity:.9}
+.dasha-text .word{margin-bottom:0}
+.reason{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:center}
+.reason + .reason{margin-top:110px}
+.num{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.3em;color:var(--wine)}
+.word{font-family:'Playfair Display',serif;font-weight:400;text-transform:uppercase;font-size:clamp(76px,10vw,140px);line-height:.9;letter-spacing:.02em;margin:10px 0 34px}
+.lead{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,32px);line-height:1.3}
+.lead .muted{display:block;color:var(--text-3);font-style:italic;font-size:.82em;margin-bottom:8px}
+.lines{list-style:none;margin-top:30px}
+.lines li{padding:14px 0 14px 34px;position:relative;font-size:18px;color:var(--text);border-top:1px solid var(--line)}
+.lines li:last-child{border-bottom:1px solid var(--line)}
+.lines li:before{content:"";position:absolute;left:0;top:27px;width:18px;height:1px;background:var(--wine)}
+.photo{position:relative;justify-self:start;max-width:470px;width:100%}
+.photo img{width:100%;height:auto;position:relative;z-index:1}
+.photo:after{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid rgba(222,184,124,.45);z-index:0}
+.photo figcaption{position:absolute;z-index:2;left:-14px;bottom:36px;font-family:'Great Vibes',cursive;color:var(--wine);font-size:54px;line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+
+.svoi{position:relative}
+.svoi .ghost{position:absolute;right:-30px;top:-70px;font-family:'Playfair Display',serif;font-size:clamp(160px,24vw,340px);line-height:1;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(222,184,124,.13);pointer-events:none;user-select:none}
+.svoi .reason{grid-template-columns:7fr 5fr;align-items:start}
+.who{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,32px);line-height:1.4;margin-top:30px}
+.who span{display:block}
+.who span:nth-child(2){color:var(--gold-2)}
+.without{list-style:none;margin-top:120px}
+.without li{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--text-2);padding:18px 0;border-top:1px solid var(--line)}
+.without li:last-child{border-bottom:1px solid var(--line)}
+.ty-wrap{text-align:center}
+.ty-wrap .word{margin:6px 0 0}
+.ty-wrap .lead.hand{margin:26px auto 0;max-width:1000px;text-wrap:balance}
+.ty-text{max-width:740px;margin:22px auto 0;font-family:'Playfair Display',serif;font-size:20px;line-height:1.55;color:var(--text-2);text-wrap:balance}
+.ty-k{margin-top:44px}
+.ty-wrap .list{max-width:760px;margin:26px auto 0;text-align:left}
+.ty-wrap .list li{font-size:19px;padding:13px 0}
+.ty-end{margin-top:44px;font-family:'Playfair Display',serif}
+.ty-end span{display:block;font-style:italic;font-size:20px;color:var(--text-3)}
+.ty-end b{display:block;font-weight:400;font-size:clamp(26px,2.8vw,36px);line-height:1.3;margin:8px auto 0;max-width:820px;text-wrap:balance}
+.svoi-head{text-align:center}
+.svoi-head .word{margin:6px 0 22px}
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--text)}
+.tags span{display:inline-flex;align-items:center}
+.tags span+span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--wine);margin:0 18px}
+.svoi-hand{text-align:center;max-width:980px;margin:40px auto 0 !important;text-wrap:balance}
+.nots{display:flex;flex-direction:column;align-items:center;gap:14px;margin:46px auto 0}
+.nots div{display:flex;align-items:baseline;gap:16px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(21px,2.1vw,27px);line-height:1.35;color:var(--text-2)}
+
+.nots svg{flex:none;width:18px;height:18px;position:relative;top:2px;stroke-width:2;fill:none;stroke:var(--wine);stroke-width:1.5;stroke-linecap:round}
+.be{text-align:center;margin-top:56px}
+.be-title{font-family:'Playfair Display',serif;font-size:clamp(30px,3.6vw,46px);line-height:1.15}
+.verbs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;margin-top:20px;font-size:14px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2)}
+.verbs span{display:inline-flex;align-items:center}
+.verbs span+span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--wine);margin:0 18px}
+.be .script{display:block;font-size:clamp(46px,5vw,68px);margin-top:18px}
+.svoi-top{display:grid;grid-template-columns:5fr 7fr;gap:70px;align-items:end}
+.svoi-top .who{margin-top:24px}
+.svoi-top .lead.hand{margin:0 0 6px}
+.without.three{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:56px}
+.without.three li{border-bottom:1px solid var(--line)}
+.free{margin-top:48px;max-width:900px;font-family:'Playfair Display',serif;font-size:clamp(24px,2.6vw,34px);line-height:1.4}
+.free em{font-style:italic;color:var(--gold-2)}
+
+.ty .list{list-style:none;counter-reset:n;margin-top:26px}
+.ty .list li{counter-increment:n;display:grid;grid-template-columns:56px 1fr;align-items:baseline;padding:16px 0;border-top:1px solid var(--line);font-family:'Playfair Display',serif;font-size:clamp(20px,1.9vw,25px);line-height:1.35}
+.ty .list li:last-child{border-bottom:1px solid var(--line)}
+.ty .list li:before{content:"0" counter(n);font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--wine)}
+.ty .side{font-family:'Playfair Display',serif;font-size:20px;line-height:1.5;color:var(--text-2);margin-top:26px}
+.ty .side b{display:block;font-weight:400;color:var(--text);margin-top:10px}
+
+.formula{padding:80px 0;text-align:center}
+.formula .big{font-family:'Playfair Display',serif;font-size:clamp(36px,5.4vw,76px);line-height:1.15}
+.formula .q{font-family:'Playfair Display',serif;font-size:.6em;vertical-align:.15em;margin:0 .08em}
+.formula .big.caps{text-transform:uppercase;letter-spacing:.03em}
+.formula .big i{font-style:normal;color:var(--wine);margin:0 .12em}
+.formula .script{display:block;font-size:clamp(56px,7vw,96px);margin-top:22px}
+
+/* ===== 4. КАК ЭТО РАБОТАЕТ ===== */
+.how h2{max-width:780px}
+.flow{margin-top:70px;max-width:1000px}
+.row{display:grid;grid-template-columns:1fr 130px 1fr;align-items:center;padding:30px 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row .from{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--text-2);line-height:1.35}
+.row .arr{height:1px;margin:0 26px;background:var(--wine);position:relative}
+.row .arr:after{content:"";position:absolute;right:-1px;top:-4px;width:9px;height:9px;border-top:1px solid var(--wine);border-right:1px solid var(--wine);transform:rotate(45deg)}
+.row .to{font-family:'Playfair Display',serif;font-size:30px;line-height:1.2}
+.contrast{margin-top:90px;text-align:right;font-family:'Playfair Display',serif}
+.contrast .no{font-size:22px;color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--wine)}
+.contrast .yes{font-size:clamp(30px,3.8vw,48px);line-height:1.2;margin-top:12px}
+
+/* ===== 5. 8 НЕДЕЛЬ ВНУТРИ ===== */
+.inside{display:grid;grid-template-columns:repeat(4,1fr);margin-top:70px;border-top:1px solid var(--gold-3)}
+.inside div{padding:30px 28px 0 0}
+.inside div+div{padding-left:28px;border-left:1px solid var(--line)}
+.inside b{display:block;font-family:'Playfair Display',serif;font-weight:400;font-size:24px;line-height:1.25;color:var(--gold-1);margin:14px 0 10px}
+.inside span{font-size:15px;color:var(--text-2);line-height:1.55}
+.inside .ico{width:30px;height:30px}
+.program{margin-top:110px;display:grid;grid-template-columns:3fr 9fr;gap:60px}
+.months{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:50px}
+.month small{display:block;font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--wine)}
+.month h3{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(28px,2.8vw,38px);line-height:1.15;margin:14px 0 16px}
+.month p{font-size:14px;letter-spacing:.05em;color:var(--text-2)}
+.month p em{font-style:normal;color:var(--wine)}
+.program .note{grid-column:2;font-family:'Playfair Display',serif;font-style:italic;font-size:19px;color:var(--text-2);line-height:1.5;border-left:1px solid var(--gold-3);padding-left:24px;max-width:640px}
+
+/* ===== 6. ИЗМЕНЕНИЯ + ОТЗЫВЫ ===== */
+.changes{list-style:none;margin-top:70px;counter-reset:c}
+.changes li{counter-increment:c;display:grid;grid-template-columns:90px 1fr 1fr;gap:30px;align-items:baseline;padding:30px 0;border-top:1px solid var(--line)}
+.changes li:last-child{border-bottom:1px solid var(--line)}
+.changes li:before{content:"0" counter(c);font-family:'Playfair Display',serif;font-size:40px;color:var(--gold-3);line-height:1}
+.changes .less{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--text-2);line-height:1.35}
+.changes .more{font-family:'Playfair Display',serif;font-size:26px;line-height:1.3}
+.changes .more:before{content:"→ ";color:var(--wine);font-family:'Montserrat',sans-serif}
+.main-result{margin:110px auto 0;max-width:900px;text-align:center;font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,50px);line-height:1.2}
+.reviews{margin-top:130px}
+.reviews .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;margin-top:50px}
+.review{position:relative;padding-top:40px;border-top:1px solid var(--gold-3)}
+.review:before{content:"“";position:absolute;top:-6px;left:0;font-family:'Playfair Display',serif;font-size:90px;line-height:1;color:var(--wine)}
+.review p{font-family:'Playfair Display',serif;font-size:19px;line-height:1.55;color:var(--text)}
+.review .who-r{margin-top:22px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2)}
+.review.placeholder p{color:var(--text-3);font-style:italic}
+
+/* ===== 7. ОСНОВАТЕЛИ / ЦЕНА ===== */
+.price{background:radial-gradient(ellipse at 70% 55%,#2b160d 0%,var(--bg) 60%)}
+.price .grid{display:grid;grid-template-columns:6fr 5fr;gap:80px;align-items:center}
+.price .sub{margin-top:26px;font-family:'Playfair Display',serif;font-size:24px;line-height:1.4;color:var(--text-2);max-width:520px}
+.perks{list-style:none;margin-top:44px}
+.perks li{display:flex;gap:20px;align-items:center;padding:18px 0;border-top:1px solid var(--line);font-size:17px}
+.perks li:last-child{border-bottom:1px solid var(--line)}
+.perks .ico{flex:none;width:26px;height:26px}
+.pcard{text-align:center;padding:56px 44px 50px;border-radius:30px;position:relative;
+  background:linear-gradient(170deg,rgba(255,215,160,.10),rgba(255,215,160,.02) 60%);border:1px solid rgba(222,184,124,.45);
+  box-shadow:0 30px 100px rgba(0,0,0,.5),0 0 80px rgba(220,160,90,.08)}
+.pcard .new{font-family:'Playfair Display',serif;font-size:clamp(68px,7vw,96px);line-height:1}
+.pcard .per{margin-top:12px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--text)}
+.pcard .std{margin-top:14px;font-size:14px;color:var(--text-3)}
+.founders{margin:38px 0 40px;padding:30px 20px 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.founders small{display:block;font-size:12px;font-weight:600;letter-spacing:.3em;color:var(--wine)}
+.founders b{display:block;font-family:'Playfair Display',serif;font-weight:400;font-size:40px;line-height:1.1;margin-top:12px}
+.founders span{display:block;margin-top:8px;font-size:15px;color:var(--text-2)}
+.founders s{color:var(--text-3);white-space:nowrap}
+
+/* ===== 8. FAQ ===== */
+.faq-grid{display:grid;grid-template-columns:4fr 8fr;gap:70px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;font-family:'Playfair Display',serif;font-size:21px;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"";flex:none;width:12px;height:12px;border-right:1px solid var(--gold-2);border-bottom:1px solid var(--gold-2);transform:rotate(45deg);margin:-6px 6px 0 0;transition:transform .25s}
+.faq details[open] summary:after{transform:rotate(225deg);margin-top:6px}
+.faq p{padding:0 4px 26px;color:var(--text-2);font-size:16px;max-width:680px}
+
+/* ===== 9. ФИНАЛ ===== */
+.final{text-align:center;padding:130px 0 120px;background:radial-gradient(ellipse at 50% 70%,#2e170d 0%,var(--bg) 65%)}
+.final .name{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(84px,13vw,190px);line-height:.9;letter-spacing:.02em}
+.final .script{display:block;font-size:clamp(64px,8.5vw,124px);margin-top:-.18em;transform:rotate(-4deg)}
+.final .tag{margin-top:46px;font-family:'Playfair Display',serif;font-size:clamp(26px,2.8vw,36px)}
+.final .soft{margin:16px auto 50px;max-width:560px;color:var(--text-2);font-size:17px}
+footer{padding:30px 0;text-align:center;font-size:13px;color:var(--text-3);border-top:1px solid var(--line)}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width:980px){
+  section{padding:68px 0}
+  .faq-grid,.program,.price .grid{grid-template-columns:1fr;gap:40px}
+  .program .note{grid-column:1}
+  .reason,.svoi .reason{grid-template-columns:1fr;gap:28px}
+  .lines.two{grid-template-columns:1fr}
+  .lines.two li:nth-last-child(2){border-bottom:0}
+  .without{margin-top:0}
+  .svoi-top{grid-template-columns:1fr;gap:28px}
+  .without.three{grid-template-columns:1fr;margin-top:36px}
+  .without.three li{border-bottom:0}
+  .without.three li:last-child{border-bottom:1px solid var(--line)}
+  .inside{grid-template-columns:1fr 1fr;row-gap:40px}
+  .inside div:nth-child(3){padding-left:0;border-left:0}
+  .reviews .grid{grid-template-columns:1fr;gap:56px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  section{padding:52px 0}
+  .kicker{font-size:12px;letter-spacing:.24em}
+  .intro{padding:30px 0 20px}
+  .intro .expl{font-size:16px}
+  .both{font-size:11px;letter-spacing:.14em}
+  .format{flex-wrap:wrap;margin:36px auto 40px;row-gap:28px}
+  .format div{flex:0 0 50%;padding:0 10px;font-size:12px}
+  .format div:nth-child(3){border-left:0}
+  .btn{padding:20px 18px;font-size:14px;letter-spacing:.1em;gap:12px;width:100%;max-width:360px}
+  .life{padding:36px 0 48px}
+  .wall{font-size:19px;gap:8px 20px;margin-top:30px}
+  .life .last{font-size:17px}
+  .anyone{margin-top:32px;padding-top:28px}
+  .anyone p{font-size:14px}
+  .why-head{margin-bottom:48px}
+  .reason + .reason{margin-top:80px}
+  .photo{max-width:none;width:calc(100% - 18px)}
+  .dasha-photo{margin:0 14px 14px 0}
+  .dasha-photo:after{inset:14px -14px -14px 14px}
+  .why.first{padding-top:28px;padding-bottom:28px}
+  .why.svoi,.why.ty{padding:28px 0 40px}
+  .lead.hand{font-size:32px}
+  .formula{padding:60px 0}
+  .photo:after{inset:14px -14px -14px 14px}
+  .photo figcaption{left:12px;bottom:20px;font-size:46px}
+  .svoi .ghost{top:-20px;right:-20px}
+  .lines li{font-size:17px}
+  .without li{font-size:20px}
+  .free{margin-top:36px}
+  .ty-text{font-size:18px}
+  .ty-wrap .list li{font-size:17px;grid-template-columns:40px 1fr}
+  .tags,.verbs{flex-direction:column;align-items:center;gap:8px}
+  .tags span+span:before,.verbs span+span:before{display:none}
+  .nots{gap:16px}
+  .nots div{font-size:20px;flex-direction:column;align-items:center;gap:6px}
+  .gives{grid-template-columns:1fr;gap:26px}
+  .gives li{font-size:19px}
+  .be .script{font-size:44px}
+
+  .formula{padding:100px 0}
+  .row{grid-template-columns:1fr;padding:22px 0;gap:10px}
+  .row .from{font-size:19px}
+  .row .arr{width:60px;margin:4px 0}
+  .row .to{font-size:26px}
+  .contrast{text-align:left;margin-top:60px}
+  .inside{grid-template-columns:1fr;row-gap:0}
+  .inside div,.inside div+div{padding:26px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .program{margin-top:70px}
+  .months{grid-template-columns:minmax(0,1fr);gap:40px}
+  .changes li{grid-template-columns:1fr;gap:8px;padding:24px 0}
+  .changes li:before{font-size:28px}
+  .changes .less{font-size:19px}
+  .changes .more{font-size:23px}
+  .main-result{margin-top:70px}
+  .reviews{margin-top:90px}
+  .price .sub{font-size:20px}
+  .pcard{padding:44px 22px 38px}
+  .founders b{font-size:34px}
+  .faq summary{font-size:18px;padding:20px 2px}
+  .final{padding:110px 0}
+  .final .script{margin-top:.02em}
+  .formula .script{font-size:52px}
+}
+
+/* ===== единая типографика: Playfair + Montserrat, без смены шрифтов ===== */
+.lead.hand,.lead.hand.svoi-hand{font-family:'Playfair Display',serif;font-style:normal;font-size:clamp(22px,2.2vw,28px);line-height:1.5;color:var(--text)}
+.life .last,.without li,.ty-end span,.nots div,.free em,.row .from,.program .note,.changes .less,.review.placeholder p,.lead .muted{font-style:normal}
+.be-end{margin-top:18px;font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);color:var(--wine)}
+.fo-sub{margin-top:18px;font-family:'Playfair Display',serif;font-size:clamp(22px,2.6vw,32px);color:var(--text-2)}
+
+/* ===== рукописные акценты — Miama Nueva ===== */
+.script{font-family:'Miama Nueva','Great Vibes',cursive}
+.be-end{font-family:'Miama Nueva',cursive;font-size:clamp(34px,3.6vw,48px);line-height:1.2;color:var(--wine);margin-top:14px}
+.fo-sub{font-family:'Miama Nueva',cursive;font-size:clamp(34px,4vw,54px);line-height:1.2;color:var(--gold-1);margin-top:10px}
+
+.be-end{font-size:clamp(30px,3vw,42px);line-height:1.5;padding-bottom:10px}
+.fo-sub{font-size:clamp(32px,3.6vw,50px);line-height:1.45;margin-top:14px}
+.final .script{font-size:clamp(54px,6.5vw,92px);margin:0 0 70px;transform:rotate(-3deg)}
+@media (max-width:600px){.be-end{font-size:24px;text-wrap:balance;padding:0 6px 8px}.fo-sub{font-size:30px}.final .script{font-size:56px;margin-bottom:50px}}
+
+/* все смысловые рукописные фразы — одним шрифтом Miama Nueva */
+.lead.hand,.lead.hand.svoi-hand,.ty-wrap .lead.hand,.dasha-text .lead.hand{font-family:'Miama Nueva',cursive;font-style:normal;font-size:clamp(30px,2.9vw,40px);line-height:1.55;color:var(--gold-1);text-wrap:balance}
+.life-s{font-size:1.35em;margin-left:.15em}
+@media (max-width:600px){.lead.hand,.lead.hand.svoi-hand,.ty-wrap .lead.hand,.dasha-text .lead.hand{font-size:23px;line-height:1.55}}
+
+/* компактный блок «Сюда можно прийти с жизнью» */
+.life{padding:36px 0 44px}
+.life h2{font-size:clamp(30px,3.4vw,44px)}
+.wall{max-width:900px;margin-top:38px;gap:4px 24px;font-size:clamp(17px,1.6vw,21px);line-height:1.5}
+.life .last{margin-top:12px;font-size:16px}
+.anyone{margin-top:22px;padding-top:0}
+.anyone:before{display:none}
+.anyone p{font-size:13px}
+.anyone .big{margin-top:8px;font-size:clamp(20px,2vw,26px)}
+@media (max-width:600px){.life{padding:28px 0 36px}.wall{font-size:16px;gap:2px 14px;margin-top:18px}.life .last{font-size:15px}.anyone{margin-top:18px}.anyone .big{font-size:19px}}
+
+.life h2{font-size:clamp(34px,4vw,50px)}
+.wall{font-size:clamp(15px,1.35vw,18px);gap:2px 22px}
+.life .last{font-size:19px;margin-top:16px}
+.anyone{margin-top:30px}
+.anyone p{font-size:15px}
+.anyone .big.combo{font-family:'Playfair Display',serif;font-size:clamp(26px,2.7vw,36px);line-height:1.35;color:var(--text);margin-top:10px}
+.anyone .big.combo .script{font-size:1.4em;margin-left:.1em}
+@media (max-width:600px){.wall{font-size:14.5px}.life .last{font-size:17px}.anyone p{font-size:14px}.anyone .big.combo{font-size:23px}}
+
+.anyone .big.combo{line-height:1.6}
+.anyone .big.combo .script{display:inline-block;white-space:nowrap;line-height:1;font-size:1.3em;vertical-align:-.05em}
+.life .wall{margin-top:46px}
+@media (max-width:600px){.life .wall{margin-top:34px}.anyone .big.combo .script{display:block;margin:4px 0 10px}}
+
+.anyone{max-width:1100px}
+@media (max-width:600px){.anyone .big.combo{line-height:1.45}.anyone .big.combo .script{margin:0 0 4px}}
+@media (max-width:600px){.anyone .big.combo br{display:none}}
+
+/* сочетание шрифтов в блоке Даша */
+.combo2{font-family:'Playfair Display',serif;font-size:clamp(22px,2.2vw,29px);line-height:1.55;color:var(--text);max-width:960px;margin-left:auto;margin-right:auto;text-wrap:balance}
+.combo2 .script{display:inline-block;white-space:nowrap;font-size:1.45em;line-height:1;vertical-align:-.04em;margin:0 .08em}
+.dasha-text .lead.combo2{margin-top:30px}
+.dasha-end.combo2{margin-top:40px;color:var(--gold-1)}
+@media (max-width:600px){.combo2{font-size:19px;line-height:1.6}.combo2 br{display:none}}
+
+.dasha-end.combo2{padding-bottom:14px;max-width:1000px}
+@media (max-width:600px){.combo2 .script{font-size:1.3em}}
+
+/* ===== единый стиль фраз: антиква + рукописный акцент, ровные строки ===== */
+.phr{font-family:'Playfair Display',serif;font-size:clamp(21px,2vw,27px);line-height:1.7;color:var(--text);max-width:820px;margin:28px auto 0;text-align:center;text-wrap:balance}
+.phr .script{display:inline-block;white-space:nowrap;font-family:'Miama Nueva',cursive;color:var(--wine);font-size:1.32em;line-height:1;vertical-align:-.04em;margin:0 .06em}
+.phr-gold{color:var(--gold-1)}
+.phr-life{max-width:760px;margin-top:12px;font-size:clamp(23px,2.3vw,30px)}
+.dasha-text .phr-gold{margin-top:36px}
+/* блок Свои — компактнее */
+.why.svoi{padding:20px 0 28px}
+.svoi-head .word{margin:0 0 14px}
+.svoi .phr{margin-top:24px}
+.nots{margin-top:26px;gap:6px}
+.nots div{font-size:clamp(18px,1.7vw,22px)}
+.be{margin-top:34px}
+.be .phr{margin-top:12px}
+.verbs{margin-top:12px}
+.why.ty{padding-top:28px}
+.ty-wrap .phr{margin-top:22px}
+@media (max-width:600px){.phr{font-size:19px;line-height:1.65}.phr-life{font-size:21px}.phr .script{font-size:1.25em}.nots div{font-size:18px}}
+
+.phr{line-height:1.85}
+.phr .script{font-size:1.22em}
+.phr-life{max-width:1100px}
+.ty-wrap .list{max-width:820px}
+@media (max-width:600px){.phr{line-height:1.75}}
+@media (max-width:900px){br.dbr{display:none}}
+.phr .dbr+*{}
+.be-title,.phr{text-wrap:balance}
+
+/* ===== ЕДИНЫЙ ШАБЛОН ТРЁХ БЛОКОВ ===== */
+.why.first{padding-bottom:30px}
+.why.svoi,.why.ty{padding:30px 0}
+.why.ty{padding-bottom:60px}
+.blk{text-align:center;margin-top:44px}
+.why.svoi .blk,.why.ty .blk{margin-top:0}
+.blk .num{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.3em;color:var(--wine)}
+.blk .word{font-family:'Playfair Display',serif;font-weight:400;text-transform:uppercase;font-size:clamp(76px,9vw,120px);line-height:.95;letter-spacing:.02em;margin:6px 0 14px}
+.blk .tags{justify-content:center}
+.blk .phr{max-width:none;margin:26px auto 0}
+.blk .lbl{margin:26px auto 0;font-family:'Playfair Display',serif;font-size:18px;color:var(--text-2)}
+.blk .ln{list-style:none;max-width:720px;margin:24px auto 0;text-align:left}
+.blk .ln li{position:relative;padding:12px 0 12px 32px;font-size:16px;line-height:1.5;color:var(--text);border-top:1px solid var(--line)}
+.blk .ln li:last-child{border-bottom:1px solid var(--line)}
+.blk .ln li:before{content:"";position:absolute;left:0;top:23px;width:16px;height:1px;background:var(--wine)}
+.blk .ln li:after{display:none}
+.blk .phr.fin{color:var(--gold-1);margin-top:30px}
+.phr .nw{white-space:nowrap}
+.formula .phr.fo{margin-top:14px;font-size:clamp(24px,2.6vw,34px);color:var(--text-2)}
+@media (max-width:600px){
+  .blk .word{font-size:64px}
+  .blk .tags{flex-direction:column;align-items:center;gap:6px}
+  .blk .tags span+span:before{display:none}
+  .blk .lbl{font-size:16px}
+  .blk .ln li{font-size:15px}
+  .why.svoi,.why.ty{padding:24px 0}
+  .formula .phr.fo{font-size:22px}
+}
+
+/* все фразы — одинаково: общая ширина, строки выравниваются скриптом */
+.blk .phr,.phr-life,.formula .phr.fo{max-width:1000px;margin-left:auto;margin-right:auto}
+.blk .phr,.phr-life,.formula .phr.fo{max-width:940px;text-wrap:balance}
+.blk .phr .script{font-size:1.18em}
+.blk .phr:not(.fin){max-width:1110px}
+
+/* === шесть фраз «Даша/Свои/Ты»: всегда 2 строки, одинаковый кегль === */
+.phr.eq{max-width:none;font-size:min(26px,calc((100vw - 72px)/42));line-height:1.75;text-wrap:wrap}
+.phr.eq .l{display:block;white-space:nowrap}
+.phr.eq .script{font-size:1.2em}
+.phr.eq.fin{color:var(--gold-1)}
+@media (max-width:760px){.phr.eq{font-size:19px;line-height:1.7;text-wrap:balance}.phr.eq .l{display:inline;white-space:normal}}
+
+/* ===== плотнее по всей странице ===== */
+section{padding:48px 0}
+.intro{padding-bottom:16px}
+.life{padding:24px 0 16px}
+.life .wall{margin-top:30px}
+.phr-life{margin-top:6px}
+.why.first{padding-top:30px;padding-bottom:20px}
+.why-head{margin-bottom:36px}
+.why.svoi,.why.ty{padding:24px 0}
+.why.ty{padding-bottom:44px}
+.formula{padding:56px 0}
+.inside{margin-top:44px}
+.program{margin-top:64px}
+.changes{margin-top:44px}
+.main-result{margin-top:56px}
+.price .grid{gap:56px}
+.final{padding:90px 0 80px}
+@media (max-width:600px){section{padding:36px 0}.intro{padding-bottom:12px}.life{padding:18px 0 12px}.why.first{padding-top:22px}.formula{padding:40px 0}.final{padding:64px 0}}
+
+.phr-life{white-space:nowrap;max-width:none}
+.why.ty{padding-bottom:10px}
+.formula{padding:30px 0 56px;background:none}
+@media (max-width:600px){.phr-life{white-space:normal}.formula{padding:20px 0 40px}}
+
+/* ===== Что даст тебе клуб ===== */
+.gives-sec{padding-top:10px}
+.gives-sec .why-head h2{font-size:clamp(36px,4.6vw,60px);line-height:1.1}
+.gives-sec .changes{max-width:900px;margin:0 auto}
+.gives-sec .changes li{grid-template-columns:56px 1fr 1fr;gap:24px;padding:18px 0}
+.gives-sec .changes li:before{font-size:26px}
+.gives-sec .changes .less{font-size:18px;font-style:normal}
+.gives-sec .changes .more{font-size:20px}
+.gives-sec .gives-end{margin-top:40px}
+@media (max-width:600px){.gives-sec .changes li{grid-template-columns:1fr;gap:6px}.gives-sec .changes .less{font-size:16px}.gives-sec .changes .more{font-size:18px}}
+.gives-sub{margin-top:14px;font-size:clamp(21px,2vw,27px)}
+.gives-sub .script{font-size:1.25em}
+
+/* ===== Только внутри клуба ===== */
+.excl{padding:40px 0 30px}
+.exs{display:flex;flex-wrap:wrap;justify-content:center;gap:44px 56px;max-width:1080px;margin:0 auto}
+.ex{flex:0 0 calc((100% - 112px)/3);text-align:center}
+.ex b{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);padding-bottom:14px;margin-bottom:14px;position:relative}
+.ex b:after{content:"";position:absolute;left:50%;bottom:0;width:28px;margin-left:-14px;height:1px;background:var(--wine)}
+.ex p{font-family:'Playfair Display',serif;font-size:17px;line-height:1.6;color:var(--text-2)}
+.excl-end{margin-top:50px}
+@media (max-width:900px){.ex{flex-basis:calc((100% - 56px)/2)}}
+@media (max-width:600px){.excl{padding:30px 0 20px}.exs{gap:30px}.ex{flex-basis:100%}.ex p{font-size:16px}.excl-end{margin-top:36px}}
+@media (max-width:760px){.excl-end .l{display:block}}
+@media (min-width:901px){.ex:nth-child(n+4){flex:0 0 calc((100% - 56px)/2)}.ex:nth-child(n+4) p{max-width:440px;margin:0 auto}}
+@media (max-width:900px) and (min-width:601px){.ex:last-child{flex-basis:100%}.ex:last-child p{max-width:none}}
+.formula.banner2{padding:20px 0 0;background:none}
+.frame2{position:relative;max-width:1983px;margin:0 auto}
+.frame2 img{width:100%;height:auto}
+.banner-cta2{position:absolute;left:15%;top:64%;width:36.6%;height:16.3%;border-radius:999px}
+.gives-sec{padding-top:48px}
+.formula.banner2{padding-top:28px}
+
+.frame2{max-width:900px;margin:0 auto 22px;position:relative}
+.frame2 img{position:relative;z-index:1}
+.frame2:after{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid rgba(222,184,124,.45);z-index:0}
+.banner-cta2{z-index:2}
+@media (max-width:600px){.frame2{margin:0 14px 14px 0}.frame2:after{inset:14px -14px -14px 14px}}
+.formula.banner2{padding:28px 0 40px;overflow:visible}
+.frame2,.dasha-photo{max-width:680px;margin-left:auto;margin-right:auto}
+@media (max-width:760px){.frame2,.dasha-photo{max-width:none;margin-left:0;margin-right:14px}}
+.gives-sec{padding-top:6px}
+.formula.banner2{padding-bottom:30px}
+
+/* ===== Первый сезон / основатели ===== */
+.price .why-head{margin-bottom:22px}
+.pr-lead{max-width:860px;margin:0 auto;text-align:center;font-family:'Playfair Display',serif;font-size:clamp(19px,1.8vw,23px);line-height:1.7;color:var(--text);text-wrap:balance}
+.pr-lead .script{font-size:1.25em;color:var(--wine)}
+.pr-few{max-width:780px;margin:22px auto 0;text-align:center;font-family:'Playfair Display',serif;font-size:17px;line-height:1.65;color:var(--text-2);text-wrap:balance}
+.pr-few b{display:block;font-weight:400;font-size:clamp(20px,1.9vw,24px);color:var(--gold-1);margin-bottom:6px}
+.fps{margin-top:46px;max-width:1000px}
+.ex.fp{flex:0 0 calc((100% - 56px)/2)}
+.ex.fp .ico{display:block;margin:0 auto 14px;width:28px;height:28px}
+.pr-end{margin-top:46px}
+.price .pcard{max-width:560px;margin:44px auto 0}
+@media (max-width:600px){.ex.fp{flex-basis:100%}.pr-few{font-size:16px}.pr-end .l{display:block}}
+@media (max-width:760px){.phr.eq.pr-end .l,.phr.eq.excl-end .l{display:block}}
+.pr-badge{text-align:center;margin-top:28px}
+.pr-badge span{display:inline-flex;align-items:center;gap:12px;padding:11px 26px;border:1px solid rgba(222,184,124,.5);border-radius:999px;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-1);background:rgba(208,67,76,.08)}
+.pr-badge svg{width:16px;height:16px;fill:none;stroke:var(--wine);stroke-width:1.6;stroke-linejoin:round}
+@media (max-width:600px){.pr-badge span{font-size:11px;letter-spacing:.14em;padding:10px 18px}}
+
+.gifts{max-width:820px;margin:50px auto 0;padding:34px 30px 28px;border:1px solid rgba(222,184,124,.4);border-radius:24px;text-align:center;background:linear-gradient(170deg,rgba(208,67,76,.10),rgba(255,215,160,.03) 60%)}
+.g-k{font-size:13px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--wine)}
+.g-row{display:grid;grid-template-columns:1fr 1fr;margin-top:24px}
+.g{padding:0 26px}
+.g+.g{border-left:1px solid var(--line)}
+.g-n{display:block;font-family:'Playfair Display',serif;font-size:54px;line-height:1}
+.g b{display:block;margin-top:8px;font-family:'Playfair Display',serif;font-weight:400;font-size:21px;color:var(--text)}
+.g p{margin-top:6px;font-family:'Playfair Display',serif;font-size:16px;line-height:1.55;color:var(--text-2)}
+.g-note{margin-top:22px;font-size:13px;letter-spacing:.06em;color:var(--text-3)}
+@media (max-width:600px){.gifts{padding:28px 18px 22px}.g-row{grid-template-columns:1fr;row-gap:22px}.g{padding:0}.g+.g{border-left:0;border-top:1px solid var(--line);padding-top:22px}}
+.pr-badge a{display:inline-flex;align-items:center;gap:12px;padding:12px 26px;border:1px solid rgba(222,184,124,.55);border-radius:999px;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-1);background:rgba(208,67,76,.10);text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.pr-badge a:hover{background:rgba(208,67,76,.22);border-color:var(--gold-2);transform:translateY(-1px)}
+.pr-badge svg{width:16px;height:16px;fill:none;stroke:var(--wine);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+#pcard{scroll-margin-top:30px}
+.price{padding-top:20px}
+.gives-sec{padding-bottom:20px}
+@media (max-width:600px){.pr-badge a{font-size:11px;letter-spacing:.14em;padding:11px 18px}.price{padding-top:14px}.gives-sec{padding-bottom:14px}}
+
+/* подарки — ярче */
+.gifts{max-width:860px;margin:54px auto 0;padding:40px 34px 32px;border-radius:26px;border:1px solid rgba(240,200,140,.7);
+  background:radial-gradient(ellipse at 50% 0%,rgba(208,67,76,.55) 0%,rgba(120,25,35,.55) 40%,rgba(40,12,10,.9) 100%);
+  box-shadow:0 0 0 1px rgba(208,67,76,.25) inset,0 20px 70px rgba(160,40,50,.35),0 0 60px rgba(230,180,110,.12)}
+.g-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,38px);color:var(--gold-1);line-height:1.2}
+.g-title .script{color:#ff8a8f;font-size:1.25em;margin-left:.1em}
+.g-row{margin-top:30px}
+.g{padding:0 30px}
+.g+.g{border-left:1px solid rgba(240,200,140,.3)}
+.g-ic{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle,rgba(255,215,160,.25),rgba(255,215,160,.04) 70%);border:1px solid rgba(240,200,140,.6)}
+.g-ic svg{width:30px;height:30px;fill:none;stroke:var(--gold-1);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
+.g b{margin-top:0;font-size:clamp(24px,2.4vw,30px)}
+.g p{margin-top:8px;font-size:18px;color:var(--text)}
+.g-note{margin-top:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2)}
+@media (max-width:600px){.g+.g{border-top:1px solid rgba(240,200,140,.3)}.g p{font-size:16px}.g-note{font-size:11px}}
+.g-title{line-height:1.5}
+.g-row{margin-top:34px}
+@media (max-width:600px){.g-title .script{display:block;margin:0}.g+.g{border-left:0}.g b{font-size:23px}.gifts{padding:32px 18px 26px}}
+@media (max-width:600px){.g-title .script{font-size:1.05em;white-space:nowrap}}
+
+/* подарки: карточки с наклейкой */
+.g-row{gap:26px;margin-top:40px}
+.g.gc{position:relative;padding:40px 26px 28px;border:1px solid rgba(240,200,140,.45);border-radius:18px;background:rgba(20,6,6,.35)}
+.g.gc+.g.gc{border-left:1px solid rgba(240,200,140,.45)}
+.g-tag{position:absolute;top:0;left:50%;transform:translate(-50%,-50%) rotate(-3deg);white-space:nowrap;padding:8px 20px;border-radius:999px;
+  background:linear-gradient(180deg,#f6e3ba 0%,#e0bd86 50%,#c0904f 100%);color:#3a0f12;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  box-shadow:0 6px 18px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.6)}
+.g.gc .g-ic{width:54px;height:54px;margin-bottom:12px}
+.g.gc b{font-size:clamp(21px,2vw,25px);line-height:1.3}
+.g.gc p{font-size:16px;line-height:1.55;color:var(--text-2)}
+@media (max-width:600px){.g-row{row-gap:36px}.g.gc+.g.gc{border-top:1px solid rgba(240,200,140,.45);padding-top:40px}.g.gc{padding:38px 18px 24px}}
+.gifts .g-row{margin-top:56px}
+@media (max-width:600px){.gifts .g-row{margin-top:44px}}
+.pc-title{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,30px);color:var(--gold-1);padding-bottom:20px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.pcard .old{font-family:'Playfair Display',serif;font-size:28px;color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--wine);text-decoration-thickness:2px;letter-spacing:0}
+.pcard .new{margin-top:2px}
+.pc-head{margin-top:64px;margin-bottom:0}
+.price .pcard{margin-top:34px}
+.paynote{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;font-size:14px;color:var(--text-2)}
+.paynote svg{flex:none;width:20px;height:20px;fill:none;stroke:var(--gold-2);stroke-width:1.4;stroke-linecap:round}
+@media (max-width:600px){.pc-head{margin-top:44px}.paynote{font-size:13px}}
+@media (max-width:600px){.paynote{flex-direction:column;gap:6px}}
+.founders s{white-space:nowrap}
+.faq{max-width:820px;margin:0 auto}
+.faq summary{font-size:18px;padding:20px 4px}
+.faq p{font-size:15px}
+.fin-lines{margin:44px auto 46px;font-family:'Playfair Display',serif;font-size:clamp(21px,2.1vw,27px);line-height:1.75;color:var(--text)}
+.fin-lines .script{color:var(--wine);font-size:1.25em}
+@media (max-width:600px){.faq summary{font-size:16px}.fin-lines{font-size:19px;margin:34px auto 36px}}
+.final .fin-lines .script.fl{display:inline-block;font-size:1.25em;margin:0 0 0 .1em;transform:none;line-height:1;vertical-align:-.05em}
+.final .fin-lines{margin-top:56px}
+@media (max-width:600px){.final .fin-lines .script.fl{font-size:1.2em;margin:0}}
+.final .fin-lines{margin:70px auto 52px}
+@media (max-width:600px){.final .fin-lines{font-size:17px;margin:44px auto 36px}}
+/* ===== отступы низа страницы ===== */
+.price{padding-bottom:30px}
+.faq-sec{padding:30px 0 20px}
+.final{padding:30px 0 50px}
+.fin-card{max-width:860px;margin:0 auto;padding:54px 40px 50px;border-radius:30px;border:1px solid rgba(222,184,124,.45);
+  background:radial-gradient(ellipse at 50% 0%,rgba(160,50,40,.30) 0%,rgba(40,16,10,.65) 55%,rgba(14,7,5,.85) 100%);
+  box-shadow:0 30px 100px rgba(0,0,0,.55),0 0 80px rgba(220,160,90,.10),inset 0 1px 0 rgba(255,230,190,.12)}
+.final .fin-lines{margin:56px auto 40px}
+footer{padding:34px 0 40px;font-size:13px;line-height:1.7}
+.ft-links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 28px}
+.ft-links a{color:var(--gold-2);text-decoration:none;border-bottom:1px solid rgba(222,184,124,.35)}
+.ft-links a:hover{color:var(--gold-1)}
+.ft-req{margin-top:14px;color:var(--text-3)}
+.ft-copy{margin-top:10px;color:var(--text-3)}
+@media (max-width:600px){.fin-card{padding:40px 18px 36px;border-radius:22px}.faq-sec{padding:24px 0 14px}.final{padding:20px 0 36px}.final .fin-lines{margin:40px auto 30px}}
+.final{padding-top:50px}
+@media (max-width:600px){.final{padding-top:34px}}
+.ft-bank{margin-top:10px;color:var(--text-3)}
+.ft-bank summary{cursor:pointer;list-style:none;color:var(--text-3);text-decoration:underline;text-decoration-color:rgba(222,184,124,.3);text-underline-offset:3px}
+.ft-bank summary::-webkit-details-marker{display:none}
+.ft-bank p{margin-top:8px}
+
+/* ===== ЕДИНЫЕ КОМПАКТНЫЕ ОТСТУПЫ (финальная правка) ===== */
+.pc-head{margin-top:34px}
+.price .pcard{margin-top:26px;padding-top:40px}
+.gifts{margin-top:36px}
+.pr-end{margin-top:34px}
+.price{padding-bottom:10px}
+.faq-sec{padding:24px 0 10px}
+.faq-sec .why-head{margin-bottom:24px}
+.final{padding:30px 0 30px}
+footer{padding:24px 0 30px}
+.gives-sec .why-head{margin-bottom:26px}
+.fps{margin-top:34px}
+@media (max-width:600px){.pc-head{margin-top:28px}.gifts{margin-top:30px}.gives-sec .why-head{margin-bottom:18px}.fps{margin-top:26px}.final{padding:22px 0 24px}}
+
+.price .pcard{padding-bottom:34px}
+.founders{margin:26px 0 28px;padding:22px 20px 20px}
+.faq-sec{padding-top:10px}
+.fin-card{padding:40px 40px 38px}
+.final{padding:14px 0 18px}
+footer{padding-top:18px}
+.gifts{margin-top:26px}
+.pr-end{margin-top:28px}
+@media (max-width:600px){.gives-sec .changes li{padding:16px 0}.fin-card{padding:32px 18px 30px}.final{padding:10px 0 14px}}
+.pc-head{margin-top:46px}
+.faq-sec{padding-top:30px}
+.final.banner3{padding:34px 0 40px;background:none;overflow:visible}
+.banner-cta3{position:absolute;z-index:2;left:16.0%;top:74.7%;width:37.7%;height:11.8%;border-radius:999px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20Z"/></symbol>
+    <symbol id="i-lips" viewBox="0 0 24 24"><path d="M2 12c2.5-3.6 5-5.2 7-5.2 1.2 0 2.2.7 3 1.6.8-.9 1.8-1.6 3-1.6 2 0 4.5 1.6 7 5.2-2.4 3.4-5.6 5.4-10 5.4S4.4 15.4 2 12Z"/><path d="M2 12c3.2.9 6.6 1.3 10 1.3s6.8-.4 10-1.3"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 21c-4 0-7-2.8-7-6.6 0-3.4 2.4-5.5 3.6-8 .3 1.9 1.3 3.2 2.4 3.6C11 6.6 12.6 4 15 2.5c-.2 3 1.4 4.6 2.7 6.5 1 1.5 1.3 2.8 1.3 4.4C19 18.2 16 21 12 21Z"/><path d="M12 21c-1.8 0-3-1.3-3-3 0-2 1.6-3 2.2-4.7 1 .8 1.4 1.7 1.6 2.6.6-.5 1-1.2 1.2-2 .9 1.1 1.4 2.4 1.4 3.6 0 2-1.4 3.5-3.4 3.5Z"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6M15.5 14.2c3 0 5.5 2.1 5.5 5.8"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="M13.5 6.5l4 4"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 10H5L3 8Z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3Z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ 1. ПЕРВЫЙ ЭКРАН ============ -->
+<header class="cover" data-block="01 Первый экран (баннер)">
+  <div class="frame">
+    <img src="img/banner-top.jpg" alt="Даша для своих — закрытый клуб Даши Шамашу" width="1672" height="941">
+    <a class="banner-cta js-pay" href="#price" aria-label="Стать основателем"></a>
+  </div>
+</header>
+
+<section class="intro" data-block="02 Оффер и кнопка">
+  <div class="wrap">
+    <div class="kicker">Закрытый клуб Даши Шамашу</div>
+    <div class="rule c"></div>
+    <h1>Тебе больше не нужно <span class="gold">разбираться со своей жизнью в одиночку</span></h1>
+    <p class="expl">Приходи с тем, что волнует тебя прямо сейчас — отношения, знакомства, секс, расставания, тревоги, сложные выборы и вопросы, на которые хочется найти свой ответ. Будем разбираться вместе.</p>
+    <div class="both">Закрытый клуб для мужчин и женщин</div>
+    <div class="format">
+      <div><svg class="ico"><use href="#i-cal"/></svg>8 недель</div>
+      <div><svg class="ico"><use href="#i-lips"/></svg>Живые разборы<br>с Дашей</div>
+      <div><svg class="ico"><use href="#i-heart"/></svg>Закрытый<br>чат</div>
+      <div><svg class="ico"><use href="#i-fire"/></svg>Эфиры</div>
+    </div>
+    <a class="btn js-pay" href="#price">Стать основателем
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+    <div class="under">Старт первого сезона — 19 октября · количество мест ограничено</div>
+  </div>
+</section>
+
+<!-- ============ 2. СЮДА МОЖНО ПРИЙТИ С ЖИЗНЬЮ ============ -->
+<section class="life" data-block="03 Сюда можно прийти с жизнью">
+  <div class="wrap">
+    <h2>Сюда можно прийти <span class="script life-s">с жизнью</span></h2>
+    <p class="wall">
+      <span class="a">С новым человеком</span>
+      <span class="b">С бывшими</span>
+      <span class="a">С мужем или женой</span>
+      <span class="b">С одиночеством</span>
+      <span class="a">С сексом</span>
+      <span class="b">С ревностью</span>
+      <span class="a">С тревогой</span>
+      <span class="b">С конфликтом</span>
+      <span class="a">С вопросом, который неловко задать</span>
+      <span class="b w">С ситуацией, в которой вообще непонятно, кто прав</span>
+      <span class="a">С очередными граблями</span>
+    </p>
+    <p class="last">И даже просто потому, что хочется поговорить с теми, кто поймёт.</p>
+    <div class="anyone">
+      <p>Неважно, мужчина ты или женщина. В отношениях или нет.</p>
+      <div class="phr phr-life">В клубе найдётся место <span class="script">для всего</span>, что тебя волнует</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ТОЛЬКО ВНУТРИ КЛУБА ============ -->
+<section class="excl" data-block="04 Только внутри клуба">
+  <div class="wrap">
+    <div class="why-head center">
+      <h2 class="gold">Только внутри клуба</h2>
+      <p class="phr gives-sub">То, чего <span class="script">не будет</span> в&nbsp;открытом доступе</p>
+    </div>
+    <div class="exs">
+      <div class="ex"><b>Глубже, чем в соцсетях</b><p>Глубокие разборы отношений, близости, выбора, тревоги, границ и&nbsp;других тем с&nbsp;точки зрения психологии&nbsp;— без необходимости укладывать сложное в&nbsp;короткий пост или Reels.</p></div>
+      <div class="ex"><b>Твоя ситуация + Даша</b><p>Возможность задать Даше свой вопрос и&nbsp;получить разбор именно своей истории&nbsp;— того, что происходит у&nbsp;тебя прямо сейчас.</p></div>
+      <div class="ex"><b>Эксклюзивный контент</b><p>Эфиры, материалы и&nbsp;разговоры, которые Даша создаёт специально для своих и&nbsp;которые не&nbsp;появляются в&nbsp;открытом доступе.</p></div>
+      <div class="ex"><b>Привилегии для своих</b><p>Первыми узнавать о&nbsp;новых продуктах по&nbsp;специальным ценам со&nbsp;скидками до&nbsp;30%. И&nbsp;иметь доступ к&nbsp;тому, что вообще не&nbsp;появится в&nbsp;открытой продаже.</p></div>
+      <div class="ex"><b>Ты влияешь на клуб</b><p>Вопросы и&nbsp;реальные ситуации участников становятся темами новых эфиров и&nbsp;разборов. А&nbsp;у&nbsp;своих есть возможность влиять на&nbsp;то, о&nbsp;чём будем говорить дальше.</p></div>
+    </div>
+    <p class="phr eq fin excl-end"><span class="l">Больше Даши. Больше глубины.</span> <span class="l">Больше того, что доступно <span class="script">только своим</span></span></p>
+  </div>
+</section>
+
+<!-- ============ 3. ДАША / СВОИ / ТЫ ============ -->
+<section class="why first bokeh" data-block="05 Даша">
+  <div class="wrap">
+    <div class="why-head center">
+      <div class="kicker">Даша · Свои · Ты</div>
+      <div class="rule c"></div>
+      <h2 class="gold">Три причины быть внутри</h2>
+    </div>
+
+    <!-- ДАША -->
+    <figure class="dasha-photo"><img src="img/dasha.jpg" alt="Даша Шамашу" width="1408" height="704"></figure>
+    <div class="blk">
+      <div class="num">01</div>
+      <div class="word gold">Даша</div>
+      <div class="tags"><span>Вопросы</span><span>Разборы</span><span>Взгляд со стороны</span></div>
+      <p class="phr eq"><span class="l">Даша, к&nbsp;которой можно прийти <span class="script">как к своей</span>&nbsp;— с&nbsp;тем, что волнует,</span> <span class="l">чтобы увидеть ситуацию со&nbsp;стороны и&nbsp;понять, что делать дальше.</span></p>
+      <ul class="ln">
+        <li>Задать вопрос, на который не нашлось ответа в постах и Reels</li>
+        <li>Получить разбор своего конкретного случая</li>
+        <li>Увидеть то, что сложно заметить, когда находишься внутри</li>
+      </ul>
+      <p class="phr fin eq"><span class="l">В клубе тебе больше не нужно гадать: «Интересно,</span> <span class="l">что бы сказала Даша?»&nbsp;— <span class="script">можно просто спросить</span></span></p>
+    </div>
+  </div>
+</section>
+<section class="why svoi" data-block="06 Свои">
+  <div class="wrap">
+    <div class="blk">
+      <div class="num">02</div>
+      <div class="word gold">Свои</div>
+      <div class="tags"><span>Мужчины и женщины</span><span>В отношениях и без</span><span>С разным опытом и историями</span></div>
+      <p class="phr eq"><span class="l">Здесь говорят о том, о&nbsp;чём не всегда получается поговорить <span class="script">даже с близкими</span>.</span> <span class="l">Без осуждения, банальных советов и&nbsp;попыток научить тебя жить.</span></p>
+      <ul class="ln">
+        <li>Без «да брось её / его»</li>
+        <li>Без «я бы на твоём месте…»</li>
+        <li>Без необходимости делать вид, что у тебя всё прекрасно</li>
+      </ul>
+      <p class="phr fin eq"><span class="l">В клубе можно быть собой, не бояться осуждения, получать поддержку,</span> <span class="l">находить своих и&nbsp;не&nbsp;оставаться со всем <span class="script">один на&nbsp;один</span></span></p>
+    </div>
+  </div>
+</section>
+<section class="why ty" data-block="07 Ты">
+  <div class="wrap">
+    <div class="blk">
+      <div class="num">03</div>
+      <div class="word gold">Ты</div>
+      <div class="tags"><span>Твоя история</span><span>Твои вопросы</span><span>Твои ответы</span></div>
+      <p class="phr eq"><span class="l">Ты приходишь <span class="script">со своей историей</span>. Но ответы можешь найти не только в&nbsp;ней&nbsp;—</span> <span class="l">иногда чужой разбор помогает увидеть то, чего не&nbsp;замечаешь в&nbsp;собственной жизни.</span></p>
+      <p class="lbl">Здесь ты сможешь найти ответы на важные для себя вопросы:</p>
+      <ul class="ln">
+        <li>Почему одни и те же ситуации повторяются?</li>
+        <li>Это тревога или действительно что-то не так?</li>
+        <li>Чего ты хочешь на самом деле?</li>
+        <li>Где заканчивается компромисс и начинается потеря себя?</li>
+      </ul>
+      <p class="phr fin eq"><span class="l">В клубе ты не станешь «правильнее». Ты начнёшь</span> <span class="l"><span class="script">лучше понимать себя</span>, свои выборы и&nbsp;то, как хочешь жить.</span></p>
+    </div>
+  </div>
+</section>
+<section class="formula banner2" data-block="08 Баннер Даша+Свои+Ты">
+  <div class="wrap">
+  <div class="frame2">
+    <img src="img/banner-dasha-svoi-ty.jpg" alt="Даша + Свои + Ты. В этом и есть клуб «Даша для своих»" width="1983" height="793">
+    <a class="banner-cta2" href="#pcard" aria-label="Присоединиться"></a>
+  </div>
+  </div>
+</section>
+
+<!-- ============ 6. ЧТО ДАСТ ТЕБЕ КЛУБ ============ -->
+<section class="bokeh gives-sec" data-block="09 Что даст тебе клуб">
+  <div class="wrap">
+    <div class="why-head center">
+      <h2 class="gold">Что даст тебе клуб</h2>
+      <p class="phr gives-sub"><span class="script">Больше ясности</span> в&nbsp;себе, людях и&nbsp;отношениях</p>
+    </div>
+    <ol class="changes">
+      <li><div class="less">Меньше гадать, что другой человек имел в виду</div><div class="more gold">больше смотреть на реальные поступки</div></li>
+      <li><div class="less">Меньше путать тревогу с интуицией</div><div class="more gold">лучше различать свои реакции</div></li>
+      <li><div class="less">Меньше повторять один сценарий с разными людьми</div><div class="more gold">раньше замечать, куда всё идёт</div></li>
+      <li><div class="less">Меньше терять себя рядом с другим</div><div class="more gold">лучше понимать свои желания и границы</div></li>
+    </ol>
+    <p class="phr eq fin gives-end"><span class="l">И главное&nbsp;— знать, что со своей жизнью</span> <span class="l">тебе есть <span class="script">куда прийти</span></span></p>
+</div>
+</section>
+
+<!-- ============ 7. ОСНОВАТЕЛИ / ЦЕНА ============ -->
+<section class="price" id="price" data-block="10 Первый сезон / основатели">
+  <div class="wrap">
+    <div class="why-head center">
+      <h2 class="gold">Первый сезон бывает только один раз</h2>
+    </div>
+    <p class="pr-lead">Те, кто заходят в&nbsp;«Даша для своих» первыми, не&nbsp;просто становятся участниками. Они становятся <span class="script">основателями клуба</span>&nbsp;— с&nbsp;особым статусом и&nbsp;условиями, которых уже не&nbsp;будет у&nbsp;тех, кто присоединится позже.</p>
+    <div class="pr-badge"><a href="#pcard"><svg viewBox="0 0 24 24"><path d="M4 21V4M4 4h13l-2.5 4L17 12H4"/></svg>Количество мест ограничено<svg class="ar" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a></div>
+    <div class="exs fps">
+      <div class="ex fp"><svg class="ico"><use href="#i-crown"/></svg><b>Быть своими с самого начала</b><p>Статус основателя останется с&nbsp;тобой и&nbsp;после первого сезона.</p></div>
+      <div class="ex fp"><svg class="ico"><use href="#i-heart"/></svg><b>Влиять на клуб</b><p>Предлагать темы для разборов и&nbsp;влиять на&nbsp;то, каким клуб станет дальше.</p></div>
+      <div class="ex fp"><svg class="ico"><use href="#i-lock"/></svg><b>Сохранить особую цену на&nbsp;3&nbsp;года</b><p>Стоимость продления для основателей фиксируется на&nbsp;специальных условиях.</p></div>
+      <div class="ex fp"><svg class="ico"><use href="#i-star"/></svg><b>Получать новое раньше остальных</b><p>Первыми узнавать о&nbsp;новых продуктах и&nbsp;получать особые условия.</p></div>
+    </div>
+    <div class="gifts">
+      <div class="g-title">Подарки <span class="script">для самых первых</span></div>
+      <div class="g-row">
+        <div class="g gc"><span class="g-tag">Первым десятерым</span><div class="g-ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="11.5" rx="1.2"/><path d="M2.5 9h19v-.5a1 1 0 0 0-1-1h-17a1 1 0 0 0-1 1zM12 7.5v13"/><path d="M12 7.5C10.5 4 7 3.5 6.6 5.6 6.3 7.3 9.5 7.5 12 7.5zM12 7.5c1.5-3.5 5-4 5.4-1.9.3 1.7-2.9 1.9-5.4 1.9z"/></svg></div><b class="gold">Личный голосовой разбор от&nbsp;Даши</b><p>Даша лично разберёт твою ситуацию и&nbsp;запишет голосовое сообщение&nbsp;— только для тебя.</p></div>
+        <div class="g gc"><span class="g-tag">Следующим двадцати</span><div class="g-ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="11.5" rx="1.2"/><path d="M2.5 9h19v-.5a1 1 0 0 0-1-1h-17a1 1 0 0 0-1 1zM12 7.5v13"/><path d="M12 7.5C10.5 4 7 3.5 6.6 5.6 6.3 7.3 9.5 7.5 12 7.5zM12 7.5c1.5-3.5 5-4 5.4-1.9.3 1.7-2.9 1.9-5.4 1.9z"/></svg></div><b class="gold">Разбор твоей ситуации в&nbsp;клубе</b><p>Твоя история станет темой разбора в&nbsp;клубе&nbsp;— анонимно, без имён и&nbsp;деталей.</p></div>
+      </div>
+      <p class="g-note">Только для первых 30 основателей клуба</p>
+    </div>
+    <p class="phr eq fin pr-end"><span class="l">Позже в&nbsp;клуб смогут прийти многие.</span> <span class="l">Основателями станут <span class="script">только первые</span></span></p>
+    <div class="why-head center pc-head" data-block="11 Условия и цена">
+      <h2 class="gold">Условия для основателей</h2>
+      <p class="phr gives-sub">Старт первого сезона&nbsp;— <span class="script">19 октября</span></p>
+    </div>
+    <div class="pcard" id="pcard">
+      <div class="old">15 980 ₽</div>
+      <div class="new gold">12 990 ₽</div>
+      <div class="per">за 8 недель</div>
+        <div class="founders">
+          <small>ПРОДЛЕНИЕ</small>
+          <b class="gold">6 490 ₽/мес.</b>
+          <span>на следующие 3 года — вместо <s>7 990 ₽</s></span>
+        </div>
+        <!-- Если будет рассрочка, раскомментируйте строку ниже -->
+        <!-- <p style="margin:-14px 0 28px;color:var(--text-2);font-size:15px">Можно оплатить сразу или разделить на 2 платежа</p> -->
+        <a class="btn js-pay" href="#price">Стать основателем
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <p class="paynote"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg>Оплата картой РФ или картой иностранного банка</p>
+  </div>
+</section>
+
+<!-- ============ 8. FAQ ============ -->
+<section class="faq-sec" data-block="12 Частые вопросы">
+  <div class="wrap">
+    <div class="why-head center"><h2 class="gold">Частые вопросы</h2></div>
+    <div class="faq">
+      <details><summary>Чем клуб отличается от курса?</summary><p>Курс — это уроки, которые нужно пройти. Клуб — место, куда ты приносишь то, что происходит с тобой сейчас, и разбираешь это вместе с Дашей и своими.</p></details>
+      <details><summary>Подойдёт ли мне клуб, если я сейчас не в отношениях?</summary><p>Да. Первый месяц — о том, почему мы выбираем «не тех» и как проходят знакомства. Это особенно полезно, когда ты в поиске.</p></details>
+      <details><summary>А если я давно в отношениях или в браке?</summary><p>Тоже да. Второй месяц — о том, как строить отношения, не теряя себя: границы, тревога, конфликты, близость. А разбирать можно любые ситуации из вашей жизни.</p></details>
+      <details><summary>Что делать, если не могу присутствовать на эфире?</summary><p>Эфиры и разборы сохраняются в записи — они доступны, пока ты в клубе. Вопрос можно прислать заранее.</p></details>
+      <details><summary>Можно ли приносить очень личные ситуации?</summary><p>Да, ради этого клуб и создан. Ситуации разбираются бережно, а в чате с первого дня действуют правила общения и модерация.</p></details>
+      <details><summary>Обязательно ли активно общаться в чате?</summary><p>Нет. Насколько открываться — решаешь ты: можно читать, включаться, когда хочется, или просто смотреть разборы.</p></details>
+      <details><summary>Можно ли знакомиться внутри клуба?</summary><p>Да. Общение идёт в чате, на эфирах и встречах. Пару мы не обещаем, но здесь собираются люди, которым интересны отношения, психология и близость.</p></details>
+      <details><summary>Что будет после первых 8 недель?</summary><p>Основатели могут остаться в клубе по фиксированной цене — 6 490 ₽ в месяц на три года вместо 7 990 ₽.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. ФИНАЛ ============ -->
+<section class="final banner3" data-block="13 Финал">
+  <div class="wrap">
+  <div class="frame2">
+    <img src="img/banner-final.jpg" alt="Даша для своих. Для разговоров, которые важны. Для вопросов, которые хочется задать. Для жизни, которая происходит прямо сейчас." width="1774" height="887">
+    <a class="banner-cta3" href="#pcard" aria-label="Стать основателем"></a>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-links"><a href="https://docs.google.com/document/d/1FdWXt81-gg5V4lBAK4BQNSDip1-lNV4r/edit?usp=drivesdk&amp;ouid=105028510335243902835&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Публичная оферта и&nbsp;политика конфиденциальности</a><a href="mailto:dashashamashu@gmail.com">Служба поддержки: dashashamashu@gmail.com</a></div>
+    <p class="ft-req">ИП Лабковская Дарья Михайловна · ИНН 770701322553</p>
+    <p class="ft-copy">Даша для своих · закрытый клуб Даши Шамашу · © 2026</p>
+  </div>
+</footer>
+
+<script>
+/* ====== ССЫЛКА НА ОПЛАТУ ======
+   Вставьте ссылку оплаты между кавычками — все кнопки «Стать основателем» (и кнопка на баннере) поведут на неё.
+   Пока ссылка пустая, кнопки прокручивают страницу к блоку с ценой. */
+var PAY_URL = 'https://app.leadpay.ru/checkout/67543/';
+document.querySelectorAll('.js-pay').forEach(function(a){
+  if (PAY_URL) { a.href = PAY_URL; a.target = '_blank'; a.rel = 'noopener'; }
+  else { a.href = '#price'; }
+});
+</script>
+
+
+<script>
+/* ====== АНАЛИТИКА: клики по кнопкам и глубина просмотра → Google Таблица ======
+   Вставьте адрес веб-приложения Apps Script между кавычками. Пока пусто — ничего не отправляется. */
+var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyl8WOf9YTvkDyv-Lw-ndjx-rVyUbfyc7UCpapc_noDjyUAvi32ZNCwROtp8zzoXbjxKQ/exec';
+(function(){
+  if(!SHEET_URL) return;
+  var vid; try{vid=localStorage.getItem('dds_vid'); if(!vid){vid=Math.random().toString(36).slice(2,10); localStorage.setItem('dds_vid',vid);}}catch(e){vid=Math.random().toString(36).slice(2,10);}
+  var sid=Math.random().toString(36).slice(2,8);
+  var device=window.innerWidth<760?'телефон':'компьютер';
+  var qs=new URLSearchParams(location.search);
+  function send(type,value){
+    var data=JSON.stringify({type:type,value:value,visitor:vid,session:sid,device:device,
+      source:qs.get('utm_source')||document.referrer||'прямой заход',campaign:qs.get('utm_campaign')||''});
+    try{ if(navigator.sendBeacon){navigator.sendBeacon(SHEET_URL,new Blob([data],{type:'text/plain'}));} else {fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:data,keepalive:true});} }catch(e){}
+  }
+  send('визит','открыл страницу');
+  /* клики */
+  function label(a){
+    var t=(a.getAttribute('aria-label')||a.textContent||'').replace(/\s+/g,' ').trim();
+    var b=a.closest('[data-block]'); return t+' | '+(b?b.getAttribute('data-block'):'');
+  }
+  document.querySelectorAll('a.btn,.banner-cta,.banner-cta2,.banner-cta3,.pr-badge a').forEach(function(a){
+    a.addEventListener('click',function(){send('клик',label(a));});
+  });
+  document.querySelectorAll('.faq details').forEach(function(d){
+    d.addEventListener('toggle',function(){ if(d.open) send('вопрос',d.querySelector('summary').textContent.trim()); });
+  });
+  /* глубина: какие блоки увидел + проценты страницы */
+  var seen={};
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      var n=e.target.getAttribute('data-block'); if(e.isIntersecting&&!seen[n]){seen[n]=1;send('блок',n);io.unobserve(e.target);}
+    });},{threshold:0.35});
+    document.querySelectorAll('[data-block]').forEach(function(el){io.observe(el);});
+  }
+  var marks=[25,50,75,100],done={};
+  window.addEventListener('scroll',function(){
+    var p=Math.round((scrollY+innerHeight)/document.documentElement.scrollHeight*100);
+    marks.forEach(function(m){ if(p>=m-1&&!done[m]){done[m]=1;send('глубина',m+'%');} });
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
