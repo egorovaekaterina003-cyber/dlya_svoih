@@ -691,6 +691,20 @@ footer{padding-top:18px}
 .faq-sec{padding-top:30px}
 .final.banner3{padding:34px 0 40px;background:none;overflow:visible}
 .banner-cta3{position:absolute;z-index:2;left:16.0%;top:74.7%;width:37.7%;height:11.8%;border-radius:999px}
+
+/* разделители между блоками */
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 34px;max-width:320px}
+.divider:before,.divider:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(222,184,124,.55))}
+.divider:after{background:linear-gradient(90deg,rgba(222,184,124,.55),transparent)}
+.divider span{width:7px;height:7px;transform:rotate(45deg);border:1px solid var(--gold-2);background:rgba(208,67,76,.6)}
+/* мобильная версия: подписи под ДАША/СВОИ/ТЫ — строкой с точками, как на компьютере */
+@media (max-width:600px){
+  .divider{margin-bottom:26px;max-width:220px}
+  .blk .tags{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:6px 0;font-size:10.5px;letter-spacing:.14em}
+  .blk .tags span+span:before{display:inline-block;width:4px;height:4px;margin:0 9px}
+}
+@media (max-width:600px){.blk .tags{font-size:10px;letter-spacing:.1em}.blk .tags span+span:before{margin:0 7px}.blk .tags.wrap3 span:nth-child(3){flex-basis:100%;justify-content:center;margin-top:2px}.blk .tags.wrap3 span:nth-child(3):before{display:none}}
+@media (max-width:380px){.blk .tags{font-size:9.5px;letter-spacing:.06em}}
 </style>
 </head>
 <body>
@@ -713,7 +727,7 @@ footer{padding-top:18px}
 <header class="cover" data-block="01 Первый экран (баннер)">
   <div class="frame">
     <img src="banner-top.jpg" alt="Даша для своих — закрытый клуб Даши Шамашу" width="1672" height="941">
-    <a class="banner-cta js-pay" href="#price" aria-label="Стать основателем"></a>
+    <a class="banner-cta" href="#pcard" aria-label="Стать основателем"></a>
   </div>
 </header>
 
@@ -730,7 +744,7 @@ footer{padding-top:18px}
       <div><svg class="ico"><use href="#i-heart"/></svg>Закрытый<br>чат</div>
       <div><svg class="ico"><use href="#i-fire"/></svg>Эфиры</div>
     </div>
-    <a class="btn js-pay" href="#price">Стать основателем
+    <a class="btn" href="#pcard">Стать основателем
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     <div class="under">Старт первого сезона — 19 октября · количество мест ограничено</div>
   </div>
@@ -739,6 +753,8 @@ footer{padding-top:18px}
 <!-- ============ 2. СЮДА МОЖНО ПРИЙТИ С ЖИЗНЬЮ ============ -->
 <section class="life" data-block="03 Сюда можно прийти с жизнью">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <h2>Сюда можно прийти <span class="script life-s">с жизнью</span></h2>
     <p class="wall">
       <span class="a">С новым человеком</span>
@@ -764,6 +780,8 @@ footer{padding-top:18px}
 <!-- ============ ТОЛЬКО ВНУТРИ КЛУБА ============ -->
 <section class="excl" data-block="04 Только внутри клуба">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="why-head center">
       <h2 class="gold">Только внутри клуба</h2>
       <p class="phr gives-sub">То, чего <span class="script">не будет</span> в&nbsp;открытом доступе</p>
@@ -782,6 +800,8 @@ footer{padding-top:18px}
 <!-- ============ 3. ДАША / СВОИ / ТЫ ============ -->
 <section class="why first bokeh" data-block="05 Даша">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="why-head center">
       <div class="kicker">Даша · Свои · Ты</div>
       <div class="rule c"></div>
@@ -806,10 +826,12 @@ footer{padding-top:18px}
 </section>
 <section class="why svoi" data-block="06 Свои">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="blk">
       <div class="num">02</div>
       <div class="word gold">Свои</div>
-      <div class="tags"><span>Мужчины и женщины</span><span>В отношениях и без</span><span>С разным опытом и историями</span></div>
+      <div class="tags wrap3"><span>Мужчины и женщины</span><span>В отношениях и без</span><span>С разным опытом и историями</span></div>
       <p class="phr eq"><span class="l">Здесь говорят о том, о&nbsp;чём не всегда получается поговорить <span class="script">даже с близкими</span>.</span> <span class="l">Без осуждения, банальных советов и&nbsp;попыток научить тебя жить.</span></p>
       <ul class="ln">
         <li>Без «да брось её / его»</li>
@@ -822,6 +844,8 @@ footer{padding-top:18px}
 </section>
 <section class="why ty" data-block="07 Ты">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="blk">
       <div class="num">03</div>
       <div class="word gold">Ты</div>
@@ -850,6 +874,8 @@ footer{padding-top:18px}
 <!-- ============ 6. ЧТО ДАСТ ТЕБЕ КЛУБ ============ -->
 <section class="bokeh gives-sec" data-block="09 Что даст тебе клуб">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="why-head center">
       <h2 class="gold">Что даст тебе клуб</h2>
       <p class="phr gives-sub"><span class="script">Больше ясности</span> в&nbsp;себе, людях и&nbsp;отношениях</p>
@@ -867,6 +893,8 @@ footer{padding-top:18px}
 <!-- ============ 7. ОСНОВАТЕЛИ / ЦЕНА ============ -->
 <section class="price" id="price" data-block="10 Первый сезон / основатели">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="why-head center">
       <h2 class="gold">Первый сезон бывает только один раз</h2>
     </div>
@@ -911,6 +939,8 @@ footer{padding-top:18px}
 <!-- ============ 8. FAQ ============ -->
 <section class="faq-sec" data-block="12 Частые вопросы">
   <div class="wrap">
+    <div class="divider"><span></span></div>
+
     <div class="why-head center"><h2 class="gold">Частые вопросы</h2></div>
     <div class="faq">
       <details><summary>Чем клуб отличается от курса?</summary><p>Курс — это уроки, которые нужно пройти. Клуб — место, куда ты приносишь то, что происходит с тобой сейчас, и разбираешь это вместе с Дашей и своими.</p></details>
